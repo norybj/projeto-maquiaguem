@@ -1,20 +1,22 @@
-import { login } from "../repository/usuarioRepository";
+import { login } from "../repository/usuarioRepository.js";
 
 import { Router } from "express";
 const server = Router();
 
-
-server.post('/usuario/login', async (req, resp) => {
+server.post('/usuario/login', async(req, resp) => {
     try{
+
         const { email , senha } = req.body;
-        console.log(email)
-        const resposta = await login( email, senha);
-        resp.send(resposta)
+        const resposta = await login(email, senha);
+
+        resp.send(resposta);
 
     }catch (err) {
+
         resp.status(400).send({
-            erro: 'Ocorreu um erro'
+            erro: err.message
         });
+
     }
 })
 
