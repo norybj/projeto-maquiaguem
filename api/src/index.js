@@ -1,5 +1,6 @@
 import 'dotenv/config';
 
+import maquiagemController from './controller/maquiagemController';
 import agendaController from './controller/agendaController.js';
 import usuarioController from './controller/usuarioController.js';
 
@@ -10,6 +11,7 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
+server.use(maquiagemController);
 server.use(agendaController);
 server.use(usuarioController);
 server.listen(process.env.PORT, () => console.log(`API conectada na porta ${process.env.PORT}`));

@@ -14,3 +14,4 @@ export async function login(email, senha){
     return linhas[0];
 
 }
+
