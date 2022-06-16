@@ -1,0 +1,55 @@
+
+
+(1) /POST       /usuario/login
+
+request body
+{
+    "email": "",
+    "senha": ""
+}
+
+response 
+{
+    "id":0,
+    "email":"",
+    "nome":""
+}
+
+(2) /POST   /agenda
+
+request body
+{
+    "usuario": 0,
+    "maquiagem": 0,
+    "data": "",
+    "hora": ""
+}
+
+response
+{
+
+}
+
+(3)/POST    /maquiagem
+
+request body
+{
+    "nome": "",
+    "preço":""
+}
+
+(4)/DELETE      /agenda/:id
+
+response (204)
+
+
+(5)/GET     /agenda
+
+response
+{
+    {
+        "usuario": 0,
+        "data": "",
+        "hora": ""
+    }
+}
