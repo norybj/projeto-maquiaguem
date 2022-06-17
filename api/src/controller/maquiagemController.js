@@ -1,6 +1,5 @@
 import { criarMaquiagem } from "../repository/maquiagemRepository.js";
 
-
 import { Router } from "express";
 const server = Router();
 
@@ -17,3 +16,5 @@ server.post('/maquiagem', async(req, resp) => {
         });
     }
 });
+
+export default server;
