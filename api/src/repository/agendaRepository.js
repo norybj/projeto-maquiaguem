@@ -15,9 +15,11 @@ export async function criarAgenda(agenda){
 export async function listarAgenda(){
 
     const comando = 
-        `SELECT a.id_agenda    	id,
-                u.nm_usuario   	nome,
-                m.nm_maquiagem 	maquiagem,
+        `SELECT a.id_agenda    	 id,
+                a.id_usuario     usuario_id,
+                a.id_maquiagem   maquiagem_id,
+                u.nm_usuario   	 nome,
+                m.nm_maquiagem 	 maquiagem,
                 a.dt_agendamento data,
                 a.hr_agendamento hora
                 
