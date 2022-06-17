@@ -1,6 +1,6 @@
 import 'dotenv/config';
 
-import maquiagemController from './controller/maquiagemController';
+import maquiagemController from './controller/maquiagemController.js';
 import agendaController from './controller/agendaController.js';
 import usuarioController from './controller/usuarioController.js';
 
