@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 2em;
+    width: px;
+    border-radius: 3px;
+    border: 1px solid #1F1F1F;
+}
+
+a,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page {
+
+    color: #fff;
+    min-height: 100vh;
+    min-width: 1280px;
+
+    header {
+        display: flex;
+        align-items: center;
+
+        height: 9em;
+        background-color: #d8c6c0;
+    }
+
+    .titulo {
+        font: 600 22px 'Inter';
+        color: #383131;
+    }
+
+    .subtitulo {
+        color: #000;
+        font-size: 1.2em;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .form-row input {
+        flex-grow: 1;
+    }
+
+    .form-row label {
+        text-align: left;
+        display: inline-block;
+        color: #000;
+    }
+
+    .form-row input[type=checkbox] {
+        flex-grow: unset;
+    }
+
+    section {
+        padding: 3em;
+        margin-top: 2em;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 14px 1px rgba(173, 173, 173, 0.25);
+        border-radius: 6px;
+    }
+
+    label {
+        text-align: right;
+        display: inline-block;
+        margin-right: 14px;
+    }
+
+
+    input {
+        outline: none;
+        font-size: 17px;
+        color: #848484;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        font: 400 1em 'Inter';
+        padding: 0.8em 1.8em;
+        border: 1px solid #DFDFDF;
+    }
+
+    ::placeholder {
+        color: #CCCCCC;
+    }
+
+    button {
+        background: #674637;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font: 700 .9em 'Inter';
+        padding: .8em 2em;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #b58888;
+    }
+
+    button:active {
+        background: #b58888;
+    }
+
+    .btn-black {
+        background: transparent;
+        border: 1px solid #656565;
+        border-radius: 5px;
+        color: #383131;
+        font: 700 .9em 'Inter';
+        transition: .3s;
+    }
+
+    .btn-black:hover {
+        background: #656565;
+        color: #fff;
+    }
+
+    .btn-black:active {
+        background: #4e4e4e;
+        color: #fff;
+    }
+    
+}
