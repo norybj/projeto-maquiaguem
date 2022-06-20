@@ -1,0 +1,89 @@
+.container{
+
+    margin:  0px;
+    padding: 0px;
+
+    display: flex;
+    color: #fff;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+
+    .container-agenda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: #D9BBB0;
+    }
+
+    .agenda{
+        width: 1200px;
+        height: 1000px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .agenda-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 109px;
+        width: 100%;
+        background-color: #674637;
+    }
+
+    .titulo {
+        font-size: 32px;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    .page-text{
+        margin-bottom: 20px;
+        color: #A67165;
+        font-size: 20px;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    .dados {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .form-group{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .double-field{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .double-field input {
+        width: 315px;
+    }
+
+    .double-field .styled{
+        width: 550px;
+    }
+    
+    .bt-alterar {
+        margin-left: 500px;
+        
+    }
+
+}
