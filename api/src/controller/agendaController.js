@@ -1,4 +1,4 @@
-import { listarAgenda, criarAgenda, deletarAgenda, alterarAgenda } from "../repository/agendaRepository.js";
+import { listarAgenda, criarAgenda, deletarAgenda, alterarAgenda, filtrarPorId } from "../repository/agendaRepository.js";
 
 import { Router } from "express";
 const server = Router();
@@ -8,6 +8,21 @@ server.get('/agenda', async(req, resp) => {
     try{
 
         const resposta = await listarAgenda();
+        resp.send(resposta);
+
+    }catch (err) {
+        resp.status(400).send({
+            erro: err.message
+        });
+    }
+});
+
+// FIltrar por Id
+server.get('/agenda/:id', async(req, resp) => {
+    try{
+
+        const { id } = req.params;
+        const resposta = await filtrarPorId(id);
         resp.send(resposta);
 
     }catch (err) {
