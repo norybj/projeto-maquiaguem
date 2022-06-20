@@ -2,9 +2,7 @@ import { con } from './connection.js';
 
 export async function criarMaquiagem(maquiagem){
 
-    const comando = 
-        `INSERT INTO tb_maquiagem (nm_maquiagem, vl_maquiagem)
-              VALUES (?,?)`;
+    const comando = `INSERT INTO tb_maquiagem (nm_maquiagem, vl_maquiagem) VALUES (?,?)`;
 
     const [resposta] = await con.query(comando, [maquiagem.maquiagem, maquiagem.valor]);
     maquiagem.id = resposta.insertId;
@@ -12,14 +10,20 @@ export async function criarMaquiagem(maquiagem){
     return maquiagem;
 }
 
-export async function filtrarMaquiagem(id){
+export async function filtrarMaquiagemPorId(id){
 
-    const comando = 
-        `SELECT * FROM tb_maquiagem 
-          WHERE id_maquiagem = ?`;
-
+    const comando = `SELECT * FROM tb_maquiagem WHERE id_maquiagem = ?`;
     const [resposta] = await con.query(comando, [id]);
     return resposta[0];
+    
+}
+
+export async function filtrarMaquiagemPorNome(nome){
+
+    const comando = `SELECT * FROM tb_maquiagem WHERE nm_maquiagem = ?`;
+    const [resposta] = await con.query(comando, [nome]);
+    return resposta[0];
+    
 }
 
 export async function alterarMaquiagem(id, maquiagem){
@@ -30,7 +34,7 @@ export async function alterarMaquiagem(id, maquiagem){
                 vl_maquiagem = ?
           WHERE id_maquiagem = ?`;
 
-    const [resposta] = await con.query(comando, [maquiagem.nome, maquiagem.valor, id]);
+    const [resposta] = await con.query(comando, [maquiagem.maquiagem, maquiagem.valor, id]);
     return resposta.affectedRows;
 
 }
