@@ -1,0 +1,129 @@
+.page-cadastrar-maquiagem{
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9BBB0;
+
+    .page-title {
+        margin-top: 80px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .box-login{
+        width: 50%;
+        height: 60vh;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .image-login{
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.35rem 0 0 0.35rem;
+        background-image: url("../../../../public/images/img-5.png");
+    }
+
+    .titulo{
+        font-size: 60px;
+        font-family: 'Julius Sans One', sans-serif;
+        color: #674637;
+    }
+
+    .linha {
+        width: 100%;
+        border-bottom: 1px solid #000;
+    }
+
+    .form-element {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-login {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 107%;
+    }
+
+    hr{
+        width: 350px;
+    }
+
+    .btn-login {
+        width: 40%;
+        padding: 15px;
+        color: #fff;
+        font-size: 24px;
+        border-radius: 10px;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    .page-text {
+        color: #000;
+        width: 222px;
+        font-size: 24px;
+        margin-right: 40px;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    .personal-label{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .login-create-user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .login-footer {
+        display: flex;
+        height: 20%;
+        justify-content: space-between;
+    }
+
+    .btn-cadastrar{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 90px;
+    }
+
+    .linha-especial{
+        width:80%;
+        margin-bottom: 60px;
+    }
+
+    .form-control {
+        font-size: 22px;
+    }
+
+}
