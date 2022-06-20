@@ -1,0 +1,69 @@
+main {
+
+    .faixa {
+        display: flex;
+        padding: 120px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+
+        width: 450px;
+        height: 500px;
+        border-radius: 5px;
+        background-color: #F8EDED;
+
+        padding: 90px;
+        color: #000;
+        font-size: 50px;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 860px;
+    }
+    
+    .faixa img {
+        margin-right: 5rem;
+        height: 600px;
+        border-radius: 10px;
+    }
+
+    .primeira-faixa{
+        margin-top: -5px;
+        background-color: #D9C5C1;
+    }
+
+    .segunda-faixa{
+        margin-top: -5px;
+        background-color: #F8EDED;
+    }
+
+    .segunda-faixa img {
+        height: 700px;
+        margin-left: 5rem;
+        border-radius: 10px;
+    }
+
+    .terceira-faixa{
+        margin-top: -5px;
+        background-color: #D9C5C1;
+    }
+
+    .container-1 {
+        background-color: #F8EDED;
+    }
+
+    .container-2 {
+        background-color: #D9C5C1;
+    }
+
+    .container-3 {
+        background-color: #F8EDED;
+    }    
+
+}
