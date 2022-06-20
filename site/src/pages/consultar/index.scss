@@ -1,0 +1,49 @@
+
+.page-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    .consult-table{
+        display:flex;
+        flex-direction: column;
+        min-width: 72% !important;
+    }
+
+    .page-title{
+        margin: 3rem;
+        text-align: center;
+        color: #A67165;
+    }
+
+    .tbody td {
+        text-align: center;
+    }
+
+    .table-data {
+        line-height: 38px;
+    }
+
+    .grid-image{
+        width: 40px;
+        height: 40px;
+    }
+
+    .button-consult{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-consult button {
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .menu-container{
+        display: flex;
+    }
+}
