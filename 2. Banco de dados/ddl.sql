@@ -3,7 +3,7 @@ USE maquiagemDB;
 
 CREATE TABLE IF NOT EXISTS tb_usuario(
    id_usuario 	    INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-   ds_email 		VARCHAR(60),
+   ds_email 		VARCHAR(60)   UNIQUE,
    ds_senha 		VARCHAR(20),
    nm_usuario 		VARCHAR(100),
    dt_nascimento 	DATE
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS tb_usuario(
 
 CREATE TABLE IF NOT EXISTS tb_maquiagem(
    id_maquiagem 	INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-   nm_maquiagem 	VARCHAR(100),
+   nm_maquiagem 	VARCHAR(100) UNIQUE,
    vl_maquiagem 	FLOAT
 );
 
