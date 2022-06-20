@@ -1,0 +1,25 @@
+.comp-footer {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 auto;
+    background-color: #A67165;
+    
+    .footer-image{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-image{
+        margin-top: 40px;
+    }
+
+    .footer-logo{
+        margin-bottom: 40px;
+    }
+}
